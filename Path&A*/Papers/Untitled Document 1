@@ -1,0 +1,3 @@
+We measure the Wi-Fi signal strength received from various routers in a bounded location and train the neural
+network so that it could further predict the user’s location for an unknown tuple set
+having signal strengths. Here,
