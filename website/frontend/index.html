@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+    <title>Indoor Navigation</title>
+    <link rel="shortcut icon" href="icon.png">
+
+ </head>
+
+ <body>
+ 	<div class="row" style="height: 100px;  width:100%; margin:0px;">
+                <div style="background-color: #ffaa66; min-height: 120% ; min-width: 100%; padding-top: 5px; box-shadow: 0px 7px 2px  rgba(0, 122, 204,0.2);">
+       				<img src="..............." style="float: right; height: 55px; width: 55px; margin-right: 15px; margin-top : 18px;">
+                	<center style="">
+                		                          <b style="font-size:70px; margin-top: 0px;">INDOOR NAVIGATION</b>
+                	</center>
+                </div>
+        </div>
+        <br><br>
+ 	<center>
+ {% if all_maps %}
+ 	<h3>Maps :<br></h3>
+ 	<ul>
+ 		{% for map in all_map %}
+ 		<li style="color:grey;">{{map.map_title}}
+ 		<li><img src="{{map.map_img.url}}">
+ {% else %}
+ 		<li>NULL DATA</li>
+ {%endif%}
+</center>
+ </body>
