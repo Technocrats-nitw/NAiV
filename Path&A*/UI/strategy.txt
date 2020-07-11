@@ -1,1 +1,0 @@
-GTK+ 3 Javascript can be used to make GUI

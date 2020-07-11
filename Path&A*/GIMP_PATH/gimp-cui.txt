@@ -1,1 +1,0 @@
-gimp -i -b \(python-fu-do-it \)
